@@ -1,11 +1,11 @@
 # Export_Crowds
-!!!!!IMPORTANTE!!!!!!!!!
+!!!!!IMPORTANT!!!!!!!!!
 
-Es necesario tener instalado el plugins "FxLabs" de "sideFxLabs"
+You need to have installed the "FxLabs" plugins from "sideFxLabs".
 
 
-OBJ-HDA para exportar crowds generados en Houdini exportarlos a Unreal Engine u otro software 
-con formato FBX y VAT ("vertex animation texture")
+OBJ-HDA to export crowds generated in Houdini to export them to Unreal Engine or other software 
+with FBX and VAT ("vertex animation texture") format.
 
 
 
@@ -15,30 +15,30 @@ https://github.com/AdriDevVfx/Export_Crowds/assets/54435704/a579e81a-a143-4780-8
 
 
 
-Guarda el archivo Export_crowd.hda en la carpeta OTL:
+Save the Export_crowd.otls file in the OTL folder:
 .\Documents\houdinixx.x\otls
 
-El nodo aparecera en el contexto OBJ de Houdini
+The node will appear in the OBJ context of Houdini.
 
-== Ayuda de uso ==
+== Help on how to use it ==
 
-Select Nodes -> Selecciona el nodo para exportar los crowds
-Elige tu forma de exportar FBX o VAT.
+Select Nodes -> Select the node to export the crowds to.
+Choose your way to export FBX or VAT.
 
 
 #### FBX ####
 
--Crea una red de nodos top dentro de un nodo geo("RND_FBX")
+-Create a network of top nodes inside a geo node("RND_FBX")
 ![TOPS](https://github.com/AdriDevVfx/Export_Crowds/assets/54435704/91d3da31-00e5-48a3-9d3f-0c05dacf35d8)
 
--Exporta cada character con el label del atributo name en la carpeta ("$HIP")
+-Exports each character with the label of the name attribute in the folder ("$HIP")
 
 
 
 #### VAT ####
 
--Crea una carpeta "Export" en la carpeta ("$HIP")  y cada carpeta character  contiene la "geo" y "textures"
+-Create an "Export" folder in the folder ("$HIP") and each character folder contains the "geo" and "textures".
 
 ![export](https://github.com/AdriDevVfx/Export_Crowds/assets/54435704/6d7e3ec2-25de-4701-90a7-4da13ec86ee0)
 
--Al ejecutar Render Vat crea un nodo "geo"/"RND_VAT" ejecuta el nodo labs::vertex_animation_textures::3.0 ("es necesario tener side FX labs instalado ") 
+-When running Render Vat creates a "geo"/"RND_VAT" node runs the node labs::vertex_animation_textures::3.0 ("side FX labs must be installed"). 
